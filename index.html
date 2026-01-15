@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <title>Frontend Mentor | Social Media Dashboard</title>
+  </head>
+
+  <body class="flex justify-center min-h-screen pt-2 bg-yellow-100 px-4">
+
+    <div class="container flex flex-col bg-white w-full max-w-[450px] md:max-w-[1100px] p-6 md:p-10">
+
+      <div class="top flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div>
+          <strong class="text-3xl">Social Media Dashboard</strong>
+          <p class="text-gray-700">Total Followers: 23,004</p>
+        </div>
+
+        <hr class="my-3 md:hidden"/>
+
+        <div class="flex items-center gap-4">
+          <strong class="text-gray-700">Dark Mode</strong>
+          <img src="off-button.png" class="w-12 h-12">
+        </div>
+      </div>
+
+      <div class="cards flex flex-col gap-6 mt-6 md:grid md:grid-cols-4">
+
+        <div class="bg-blue-50 flex flex-col items-center gap-4 py-5 px-6 rounded-sm border-t-4 border-t-blue-600">
+          <div class="flex gap-1 items-center">
+            <img src="images/icon-facebook.svg" class="w-6 h-6">
+            <strong class="text-gray-700">@nathanf</strong>
+          </div>
+          <h2 class="text-6xl font-bold">1987</h2>
+          <p class="tracking-[4px] text-gray-500 text-sm">FOLLOWERS</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-up.svg" class="w-2 h-1">
+            <span class="text-green-500">12 Today</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 flex flex-col items-center gap-4 py-5 px-6 rounded-sm border-t-4 border-t-sky-400">
+          <div class="flex gap-1 items-center">
+            <img src="images/icon-twitter.svg" class="w-6 h-6">
+            <strong class="text-gray-700">@nathanf</strong>
+          </div>
+          <h2 class="text-6xl font-bold">1099</h2>
+          <p class="tracking-[4px] text-gray-500 text-sm">FOLLOWERS</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-up.svg" class="w-2 h-1">
+            <span class="text-green-500">99 Today</span>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 rounded-sm overflow-hidden h-full">
+          <div class="h-1 bg-[linear-gradient(to_right,hsl(37,97%,70%),hsl(5,77%,71%),hsl(329,70%,58%))]"></div>
+          <div class="flex flex-col items-center gap-4 py-5 px-6 h-full">
+            <div class="flex gap-1 items-center">
+              <img src="images/icon-instagram.svg" class="w-6 h-6">
+              <strong class="text-gray-700">@realnathanf</strong>
+            </div>
+            <h2 class="text-6xl font-bold">11k</h2>
+            <p class="tracking-[4px] text-gray-500 text-sm">FOLLOWERS</p>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">1099 Today</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 flex flex-col items-center gap-4 py-5 px-6 rounded-sm border-t-4 border-t-red-500">
+          <div class="flex gap-1 items-center">
+            <img src="images/icon-youtube.svg" class="w-6 h-6">
+            <strong class="text-gray-700">Nathan F.</strong>
+          </div>
+          <h2 class="text-6xl font-bold">8239</h2>
+          <p class="tracking-[4px] text-gray-500 text-sm">SUBSCRIBERS</p>
+          <div class="flex items-center gap-1">
+            <img src="images/icon-down.svg" class="w-2 h-1">
+            <span class="text-red-500">144 Today</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <strong class="text-2xl text-gray-600 py-6">Overview - Today</strong>
+
+      <div class="carts flex flex-col gap-5 md:grid md:grid-cols-4">
+
+
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Page Views</strong>
+            <img src="images/icon-facebook.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">87</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">3%</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Likes</strong>
+            <img src="images/icon-facebook.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">52</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-down.svg" class="w-2 h-1">
+              <span class="text-red-500">2%</span>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Likes</strong>
+            <img src="images/icon-instagram.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">5462</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">2257%</span>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Profile Views</strong>
+            <img src="images/icon-instagram.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">52k</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">1375%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Retweets</strong>
+            <img src="images/icon-twitter.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">117</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">303%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Likes</strong>
+            <img src="images/icon-twitter.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">507</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-up.svg" class="w-2 h-1">
+              <span class="text-green-500">553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Likes</strong>
+            <img src="images/icon-youtube.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">107</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-down.svg" class="w-2 h-1">
+              <span class="text-red-500">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-blue-50 flex flex-col rounded-sm px-5 py-5 gap-6">
+          <div class="flex justify-between">
+            <strong class="text-gray-600">Total Views</strong>
+            <img src="images/icon-youtube.svg" class="w-5 h-5">
+          </div>
+          <div class="flex justify-between items-center">
+            <strong class="text-4xl">1407</strong>
+            <div class="flex items-center gap-1">
+              <img src="images/icon-down.svg" class="w-2 h-1">
+              <span class="text-red-500">12%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>
